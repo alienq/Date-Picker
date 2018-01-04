@@ -85,6 +85,7 @@ public class LibraryDialog extends FrameLayout {
 
             float f=   ta.getDimension(R.styleable.LibraryDialog_fontSize,10f);
               if (f!=10f){
+                  //test
 //                  day.setSelectedTextSize(f);
               }
 
