@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#58ae61"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:weightSum="2"
+    android:background="#5cb569"
+    android:elevation="4dp"
+    android:layout_height="50dp">
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+
+                />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cancel"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+
+           />
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+    <TextView
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/back_today"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="Back to Today"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="24sp"
+       />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/back_today"
+        android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:background="#51a15b" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:layout_height="wrap_content">
+        <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/np_years"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            app:np_dividerColor="#00FFFFFF"
+            app:np_selectedTextColor="#FFF"
+            app:np_selectedTextSize="25sp"
+            app:np_textColor="#d4d4d4"
+            app:np_textSize="20sp"
+            app:np_wheelItemCount="5"/>
+        <com.shawnlin.numberpicker.NumberPicker
+            android:layout_weight="1"
+            android:id="@+id/np_months"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:np_dividerColor="#00FFFFFF"
+            app:np_selectedTextColor="#FFF"
+            app:np_selectedTextSize="25sp"
+            app:np_textColor="#d4d4d4"
+            app:np_textSize="20sp"
+            app:np_wheelItemCount="5"/>
+        <com.shawnlin.numberpicker.NumberPicker
+            android:layout_weight="1"
+            android:id="@+id/np_days"
+            android:layout_width="wrap_content"
+            app:np_dividerColor="#00FFFFFF"
+            app:np_selectedTextColor="#FFF"
+            app:np_selectedTextSize="25sp"
+            app:np_textColor="#d4d4d4"
+            app:np_textSize="20sp"
+            app:np_wheelItemCount="5"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
